@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="Dp$Jom?%R?hM3|_lWV4o" x="262" y="-33"><statement name="HANDLER"><block type="radio_set_group" id="qwXsIX/{f.FEKw//LF#Z"><value name="ID"><shadow type="math_number_minmax" id="dI(Jru]GoD`hC$olu,:|"><mutation min="0" max="255" label="Id" precision="0"/><field name="SLIDER">100</field></shadow></value><next><block type="radio_set_transmit_power" id="e5SHVT{=s1Jjy+0aAn@P"><value name="power"><shadow type="math_number_minmax" id="TB~RCL%?xXYg=[/42!aI"><mutation min="0" max="7" label="Power" precision="0"/><field name="SLIDER">3</field></shadow></value></block></next></block></statement></block><block type="device_forever" id="ovJYYvhv9bw[J/@vrOZ;" x="0" y="0"><statement name="HANDLER"><block type="radio_datagram_send" id="loBpA=MD6I3C8?*/ym^G"><value name="value"><shadow type="math_number" id="px,hdh~Er!turW##cK.n"><field name="NUM">0</field></shadow></value></block></statement></block><block type="radio_on_number_drag" id=",VZUOkEOW@g(g4b8sU9/" x="32" y="264"><value name="HANDLER_DRAG_PARAM_receivedNumber"><shadow type="argument_reporter_number" id="fd1J+cN#0zDS*k6v?FuG"><field name="VALUE">receivedNumber</field></shadow></value><statement name="HANDLER"><block type="controls_if" id="t+=TnrQID#S^($iRzzlU"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="pcwFY@E(e;R6{65Vvim^"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="radio_received_packet" id="]*McHp}h]BSO-tN80Tl*"><value name="type"><shadow type="radio_packet_property" id="hLpvO);6;HMZ6P!6kl:7"><field name="note">RadioPacketProperty.SignalStrength</field></shadow></value></block></value><value name="B"><shadow type="math_number" id=")I7AmxAEB:|o_=qt-jif"><field name="NUM">-60</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="G9zwr?r^i/Y|;R]2MtnX"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        # . . . #
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="!Rc7,N.Y@?Pw1eC8u:t-"><field name="LEDS">`
+        . . . . . 
+        . . . . # 
+        . . . # . 
+        # . # . . 
+        . # . . .
+        `</field></block></statement></block></statement></block></xml>
